@@ -1,26 +1,49 @@
 # Credenciales de Firebase (NUNCA subir)
-base-de-datos-meatlam-firebase-adminsdk-fbsvc-fdafd14b50.json
+meatlam-firebase-adminsdk-fbsvc-b9befa6d2b.json
 
-# Entorno virtual de Python
-venv/
+# ===== Credenciales de Firebase (NUNCA subir) =====
+firebase-key.json
+*-firebase-adminsdk-*.json
+*.json
+
+# ===== Python =====
 __pycache__/
-*.pyc
-
-# Archivos generados por PyInstaller
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
 build/
 dist/
-*.spec
+*.egg-info/
 
-# Configuración del editor
+# ===== Flask =====
+instance/
+.flaskenv
+.env
+
+# ===== Entornos y configuración local =====
+.env
+.env.local
+*.log
+
+# ===== VSC =====
 .vscode/
-.idea/
+*.code-workspace
 
-# Sistema operativo
+# ===== Sistema operativo =====
 .DS_Store
 Thumbs.db
+desktop.ini
 
-base-de-datos-meatlam-firebase-adminsdk-fbsvc-fdafd14b50.json
-venv/
-build/
-dist/
-*.spec
+# ===== Base de datos local (si luego usas SQLite) =====
+*.db
+*.sqlite
+*.sqlite3
+
+# ===== Otros =====
+*.bak
+*.tmp

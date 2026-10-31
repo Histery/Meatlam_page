@@ -13,33 +13,17 @@
     <div class="campo">
     <label>Producto</label>
     <input type="text" id="producto" placeholder="Escribe para buscar..." autocomplete="off">
-    <div id="sugerencias" class="sugerencias"></div>
+    <div id="sugerencias" class="sugerencias oculto"></div>
 </div>
 
-    <div class="campo">
+<div class="campo">
     <label>Peso (kg)</label>
-    <div id="display-peso" class="display-peso">0.000</div>
-    <div class="teclado">
-        <button class="tecla" data-num="7">7</button>
-        <button class="tecla" data-num="8">8</button>
-        <button class="tecla" data-num="9">9</button>
-        <button class="tecla" data-num="4">4</button>
-        <button class="tecla" data-num="5">5</button>
-        <button class="tecla" data-num="6">6</button>
-        <button class="tecla" data-num="1">1</button>
-        <button class="tecla" data-num="2">2</button>
-        <button class="tecla" data-num="3">3</button>
-        <button class="tecla" data-num=".">.</button>
-        <button class="tecla" data-num="0">0</button>
-        <button class="tecla tecla-borrar" data-accion="borrar">⌫</button>
-    </div>
+    <input type="number" id="peso" step="0.001" inputmode="decimal" placeholder="25.500" autocomplete="off">
 </div>
 
-    <button id="btn-aceptar">✅ Aceptar entrada</button>
-
-    <p id="resultado"></p>
-
-    <a href="/" class="volver">← Volver al inicio</a>
+<button id="btn-aceptar">✅ Aceptar entrada</button>
+<p id="resultado"></p>
+<a href="/" class="volver">← Volver al inicio</a>
 
     <script src="{{ url_for('static', filename='entrada.js') }}"></script>
 </body>
