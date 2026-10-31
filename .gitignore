@@ -1,0 +1,26 @@
+# Credenciales de Firebase (NUNCA subir)
+base-de-datos-meatlam-firebase-adminsdk-fbsvc-fdafd14b50.json
+
+# Entorno virtual de Python
+venv/
+__pycache__/
+*.pyc
+
+# Archivos generados por PyInstaller
+build/
+dist/
+*.spec
+
+# Configuración del editor
+.vscode/
+.idea/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+base-de-datos-meatlam-firebase-adminsdk-fbsvc-fdafd14b50.json
+venv/
+build/
+dist/
+*.spec

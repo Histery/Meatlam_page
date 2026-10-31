@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada - Cámara</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>📥 Entrada</h1>
+
+    <div class="campo">
+        <label>Producto</label>
+        <input type="text" id="producto" placeholder="Ej. Bistec de res">
+    </div>
+
+    <div class="campo">
+        <label>Peso (kg)</label>
+        <input type="number" id="peso" step="0.001" placeholder="25.500">
+    </div>
+
+    <button id="btn-aceptar">✅ Aceptar entrada</button>
+
+    <p id="resultado"></p>
+
+    <a href="/" class="volver">← Volver al inicio</a>
+
+    <script src="{{ url_for('static', filename='entrada.js') }}"></script>
+</body>
+</html>
